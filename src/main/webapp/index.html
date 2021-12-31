@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Guess the Number</title>
+	</head>
+	<body>
+		<div class="outer_div">
+		<div id="sec_div">
+			<form action="guess">
+				<label id="form_title">Guess the Number</label><br>
+				<span>Choose a number between 1 and 10. If you 
+				choose the same number as generated from the server,
+				you get a point </span><br>
+				<label for="num">Choose a number</label>
+				<input type="number" id="inpnum" name="num" /><br><span id="inperror"></span><br />
+				<!-- <input style="display:none" type="submit" id="submitbtn" name="choose" value="Choose" /> -->
+				<input type="button" onclick="validate()" value="Choose"/>
+				<input type="reset" value="Clear" id="clrbtn" /><br>
+				<div id="output" style="display:none">
+				<div id="guessed" >
+					<label>Guessed Number:</label><span id="guessspan"></span>
+				</div>
+				<div id="generated" >
+					<label>Generated Number:</label><span id="genspan"></span>
+				</div>
+			</div>
+			</form>
+		</div>
+		<br><br>
+	</div>
+	<p id="msg"></p>
+		<script src="dynamic.js"></script>
+		<link rel="stylesheet" href="design.css" />
+	</body>
+</html>

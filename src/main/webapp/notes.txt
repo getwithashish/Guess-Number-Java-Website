@@ -1,0 +1,8 @@
+When using ajax (throught vanilla js), we must keep somethings in mind.
+The arguments we pass in the send() method will be treated as the data
+that is to be sent in the request body.
+If we are using the GET method, then when the request is made, the request
+body will be made empty and then only will the request be sent. If we 
+specify any data on the send() method, it will be ignored. We know that 
+in GET method, data is passed as parameters in the url itself. So, it must
+be specified along with the url in the open() method itself.
