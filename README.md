@@ -1,4 +1,3 @@
+# Guess Number Website powered by java
 
-#Guess the correct number.
-
-#Back-end uses java servlets.
+### Guess the correct number.
